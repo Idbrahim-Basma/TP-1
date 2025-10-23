@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+</head>
+
+<body>
+    <form name="inscription avancé">
+        <fieldset>
+            <legend><h3>Identité</h3></legend>
+
+            <label for="nom">Nom</label><br>
+            <input type="text" name="nom" id="nom" required><br>
+
+            <label for="prenom">Prénom</label><br>
+            <input type="text" name="prenom" id="nom" required><br>
+
+            <label for="date_de_naissance">Date de naissance</label><br>
+            <input type="date" name="date de naissance" id="date_de_naissance" min="01-01-1990" max="23-10-2025" title="1900<=date<=Aujourd'hui" required><br>
+
+        </fieldset>
+        <fieldset>
+            <legend><h3>Contact</h3></legend>
+            <label for="telephone">Téléphone</label><br>
+            <input type="tel" id="telephone" name="telephone" pattern="^0[5-7]\d{8}$" placeholder="ex:06xxxxxxxx" 
+            title="commencer le numero par 0 suivis de 5,6ou 7 le numero contient 10 chiffres" required><br>
+        
+            <label for="site">Site </label><br>
+            <input type="url" id="site" name="site" placeholder="ex:https//formulaire.com"><br>
+        </fieldset>
+          
+        <fieldset>
+            <legend><h3>Sécurité</h3></legend>
+
+            <label for="motdepasse">Mot de passe</label><br>
+            <input type="password" id="motdepasse" name="motdepasse" placeholder="minimum 8 caractères" required><br>
+
+
+            <label for="Confirmation">Confirmation</label><br>
+            <input type="password" id="Confirmation" name="Confirmation" placeholder="meme valeur" required><br>
+
+        </fieldset>
+
+        <fieldset>
+            <legend><h3>Préférences</h3></legend>
+
+            <label for="newsletter">S'abonner à la newsletter</label>
+            <input type="checkbox" id="newsletter" name="newsletter">
+            
+            <h3>Etes vous Etudiant ou Professeur?</h3>
+            <input type="radio">Etudiant <br>
+            <input type="radio">Professeur <br>
+
+        </fieldset>
+
+        <button type="submit">Envoyer</button>
+        
+    </form>
+    
+</body>
+
+</html>
+
